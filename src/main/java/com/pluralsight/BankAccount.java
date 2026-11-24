@@ -1,4 +1,7 @@
 package com.pluralsight;
 
-public interface BankAccount {
+public interface BankAccount extends Valuable{
+    void deposit(double amount);
+    double withdraw(double amount);
+    double getBalance();
 }
